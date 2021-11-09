@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/index.js"></script>
+  </head>
+  <body bgcolor="#FCF3CF">
+<font face="Georgia">
+    <nav class="teal lighten-2">
+   <div class="nav-wrapper">
+    <a class="brand-logo"><img src="img/cafe5.png" width="63px" height = "63px"></a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><a>Ingrese con su Usuario y Contraseña</a></li>
+     </ul>
+   </div>
+ </nav>
+    <br>
+  <center><img src="img/logoCoffe2.jpg" width="500px" height = "350px"></center>
+
+    <div class="row">
+    <form class="col s12" method="post" action="user.php">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_box</i>
+          <input  type="text" name="Nombre">
+          <label>Usuario</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">password</i>
+          <input  type="password" name="Password">
+          <label>Contraseña</label>
+        </div>
+    </div>
+    <div align="center">
+    <button class="btn waves-effect waves-light pink" type="submit" name="action"><font face="Georgia">Ingresar</font>
+     <i class="material-icons right">login</i>
+    </button>
+    </form>
+  </div>
+  </div>
+
+</font>
+  </body>
+</html>

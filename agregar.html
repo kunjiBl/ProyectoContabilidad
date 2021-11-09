@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Agregar Trabajadores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+
+    <font face="Lucida Bright">
+      <nav class="teal lighten-2">
+      <div class="nav-wrapper">
+       <a class="brand-logo"><img src="img/cafe5.png" width="63px" height = "63px"></a>
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li><a>Área Para Agregar Productos</a></li>
+       </ul>
+      </div>
+      </nav>
+
+    <div>
+      <form  action="sp_agregar.php" method="post">
+
+        <div class="row">
+        <form class="col s12" method="post" action="user.php">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">badge</i>
+              <input type="text" name="Nombre">
+              <label>Nombre Completo</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">business_center</i>
+              <input type="text" name="Puesto">
+              <label>Puesto</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">attach_money</i>
+              <input type="text" name="Sueldo">
+              <label>Sueldo</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_balance</i>
+              <input type="text" name="Prestamo">
+              <label>Prestamo</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">request_quote</i>
+              <input type="text" name="Anticipo">
+              <label>Anticipo</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action"><font face="Lucida Bright">Agregar</font>
+         <i class="material-icons right">add</i>
+        </button>
+        </form>
+      </div>
+
+      </form>
+    </div>
+
+    <form  action="entrada-salidaT.php" method="post">
+
+      <button class="btn waves-effect waves-light" type="submit" name="action"><font face="Lucida Bright">Regresar</font>
+       <i class="material-icons right">keyboard_return</i>
+      </button>
+
+    </form>
+  </font>
+  </body>
+</html>

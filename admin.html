@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style>
+   
+   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Irish+Grover&display=swap');
+
+
+    *{
+      font-family: 'Dancing Script', cursive;
+
+    }
+
+    .menu-principal{
+
+      position: relative;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hamburger-button{
+      position: fixed;
+      left: 10px;
+    }
+
+    img{
+      display: block;
+      max-width: 100%;
+    }
+    .images-container{
+      margin: 0 auto;
+      width: 80%;
+      height: 88.5vh;
+      display: grid;
+      align-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .images-container__div{
+      position: relative;
+    }
+
+    .images-container__div::after{
+      content: "MOped";
+      font-family: 'Irish Grover', cursive;
+      position: absolute;
+      
+      bottom: 0;
+      color: #f5e39d;
+      font-size: 2.5rem;
+      width: 100%;
+      display: flex;
+    }
+    .images-container__div--cafe::after{
+      content: "Café";
+      justify-content: flex-start;
+    }
+    .images-container__div--expreso::after{
+      content: "Café Expreso";
+      justify-content: center;
+    }
+    .images-container__div--americano::after{
+      content: "Café Americano";
+      justify-content: flex-end;
+    }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <title>Vista Administrador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/admin.js"></script>
+  <body bgcolor="#FCF3CF">
+<font face="Lucida Bright">
+  <div class="nav-wrapper brown darken-3 menu-principal" >                
+        <a href="#" class="sidenav-trigger hamburger-button" data-target="menu" style="color:#4db6ac"><i class="material-icons">menu</i></a>
+        <ul class="sidenav" id="menu">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="img/republic1.jpeg" alt="" width="100%">
+              </div>
+              <a href="#"><img src="img/user1.png" alt="" class="circle"></a>
+              <a href="#"><span class="name white-text">Usuario</span></a>
+              <a href="#"><span class="email white-text">usuario@gmail.com</span></a>
+            </div>
+          </li>
+          <li>
+            <a href="entrada-salida.php"><i class="material-icons">add_box</i>Materia Prima</a>
+          </li>
+          <li>
+            <a href="entrada-salidaT.php"><i class="material-icons">badge</i>Planilla de Trabajadores</a>
+          </li>
+          <li>
+            <a href="costo_primo.php"><i class="material-icons">$</i>Costo Primo</a>          
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+        
+          <a href="#" style="color:white; font-size: 40px; text-align: center; font-weight: 700;" >Republic Coffee Shop</a>
+          
+  </div>
+  <div class="images-container">
+    <div class="images-container__div images-container__div--cafe">
+      <img src="img/cafeNormal.jpg" alt="Cafe normal" class="images-container__img">
+    </div>
+    <div class="images-container__div images-container__div--expreso">
+      <img src="img/cafeExpresso.jpg" alt="Expreso" class="images-container__img">
+    </div>
+    <div class="images-container__div images-container__div--americano">
+      <img src="img/cafe.jpg" alt="Americano" class="images-container__img">
+    </div>
+  </div>
+    <form  action="index.html" method="post">
+
+      <button class="btn waves-effect waves-light cyan darken-2" type="submit" name="action"><font face="Lucida Bright">Salir</font>
+       <i class="material-icons right">keyboard_return</i>
+      </button>
+
+    </form>
+  </font>
+  </body>
+</html>
